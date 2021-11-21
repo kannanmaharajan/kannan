@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STUDENT REGISTRATION FORM</title>
+  </head>
+  <body>
+    <hr />
+    <h1>STUDENT REGISTRATION FORM</h1>
+    <hr />
+    <form action="">
+      <label for="Sname">Full Name:</label>
+      <input type="text" name="Sname" placeholder="First Name" required />
+      <input type="text" name="Sname" placeholder="Middle Name" required />
+      <input type="text" name="Sname" placeholder="Last Name" required />
+      <br /><br />
+      <label for="Sphoto">Attach Your Photo:</label>
+      <input type="file" name="Sphoto" id="" />
+      <br /><br />
+
+      <label for="dob">Date Of Birth:</label>
+      <input
+        type="text"
+        placeholder="Enter Your Date of Birth"
+        onfocus="(this.type='date')"
+        onblur="(this.type='text')"
+        required
+      />
+
+      <br /><br />
+      <label for="Gender">Gender:</label>
+      <input type="radio" name="Gender" />
+      <label for="Gender">Male</label>
+      <input type="radio" name="Gender" />
+      <label for="Gender">Female</label>
+      <input type="radio" name="Gender" />
+      <label for="Gender">Other</label>
+      <br /><br />
+
+      <label for="Language">Language:</label>
+      <input type="checkbox" name="Lang" />
+      <label for="Language">English:</label>
+      <input type="checkbox" name="Lang" />
+      <label for="Language">Hindi:</label>
+      <input type="checkbox" name="Lang" />
+      <label for="Language">Marathi:</label>
+
+      <br /><br />
+
+      <label for="Dept">Department:</label>
+      <select name="Dept" value="Dept" required>
+        <option value="" disabled selected>Select</option>
+        <option value="Dept">COMPUTER</option>
+        <option value="Dept">CIVIL</option>
+        <option value="Dept">EXTC</option>
+        <option value="Dept">IT</option>
+      </select>
+      <br /><br />
+
+      <label for="Add">Address:</label>
+      <textarea name="Add" placeholder="Enter Your Address"></textarea>
+      <br /><br />
+
+      <label for="State">State:</label>
+      <select name="state" value="state" required>
+        <option value="" disabled selected>Select</option>
+        <option value="state">Madhya Pradesh</option>
+        <option value="state">TamilNadu</option>
+        <option value="state">Maharastra</option>
+        <option value="state">Kerala</option>
+      </select>
+
+      <br /><br />
+      <label for="Email">Email:</label>
+      <input
+        type="email"
+        name="Email"
+        placeholder="Enter Your email Here"
+        required
+      />
+      <br /><br />
+      <label for="psswrd">Password:</label>
+      <input type="password" name="password" placeholder="Enter a password" />
+      <br /><br />
+
+      <label for="Phone">Phone Number:</label>
+      <input
+        type="number"
+        name="Phone"
+        placeholder="Enter Your Number Here"
+        required
+      />
+      <br /><br />
+
+      <input type="submit" name="RegisterNow" />
+      <button type="reset">Reset</button>
+    </form>
+    <hr />
+  </body>
+</html>
